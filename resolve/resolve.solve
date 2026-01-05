@@ -1,0 +1,46 @@
+
+// 1. Create a Promise
+const myPromise = new Promise((resolve, reject) => {
+  // Simulating an asynchronous operation
+  setTimeout(() => {
+    const success = false; // Set to true to see the .then path
+
+    if (success) {
+      resolve("Operation Successful!"); 
+    } else {
+      reject("Start over"); // Promise rejected
+    }
+  }, 2000); // Reduced to 2 seconds for quicker testing
+});
+
+// 2. Consume the Promise
+myPromise
+  .then((result) => {
+    console.log("Success:", result);
+    return "Processed data"; 
+  })
+  .then((processedResult) => {
+    console.log("Next step:", processedResult);
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  })
+  .finally(() => {
+    console.log("Promise settled (finished).");
+  });
+
+
+
+const promise1 = Promise.resolve("First task done");
+const promise2 = new Promise((resolve) => setTimeout(resolve, 500, 'Second task done'));
+
+Promise.all([promise1, promise2])
+  .then((results) => {
+    console.log("All tasks done:", results); // Output: ["First task done", "Second task done"]
+  })
+  .catch(err => console.error(err));
+
+
+
+
+

@@ -1,4 +1,18 @@
 # GitHub Copilot CLI (Public Preview)
+# Use a pipeline as a high-level helper
+from transformers import pipeline
+
+pipe = pipeline("image-text-to-text", model="google/translategemma-4b-it")
+messages = [
+    {
+        "role": "user",
+        "content": [
+            {"type": "image", "url": "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/p-blog/candy.JPG"},
+            {"type": "text", "text": "What animal is on the candy?"}
+        ]
+    },
+]
+pipe(text=messages)
 
 The power of GitHub Copilot, now in your terminal.
 

@@ -1,4 +1,74 @@
 # GitHub Copilot CLI (Public Preview)
+##%%#ˆStableUMTS_MESSAGEUMTS_MESSAGECREATE TABLE "UMTS_MESSAGE" (
+  "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+  "geom" POINT,
+  "deviceSerialNumber" TEXT,
+  "Time" INT,
+  "MissionId" TEXT,
+  "RecordNumber" MEDIUMINT NOT NULL DEFAULT -1,
+  "speed" FLOAT,
+  "accuracy" MEDIUMINT,
+  "locationAge" MEDIUMINT,
+  "GroupNumber" MEDIUMINT NOT NULL DEFAULT -1,
+  "Serving Cell" BOOLEAN,
+  "Provider" TEXT,
+  "slot" SMALLINT,
+  "MCC" SMALLINT,
+  "MNC" SMALLINT,
+  "LAC" MEDIUMINT,
+  "Cell ID" MEDIUMINT,
+  "UARFCN" SMALLINT,
+  "PSC" SMALLINT,
+  "Signal Strength" FLOAT,
+  "RSCP" FLOAT
+)„q%%‰%tableCDMA_MESSAGECDMA_MESSAGE
+CREATE TABLE "CDMA_MESSAGE" (
+  "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+  "geom" POINT,
+  "deviceSerialNumber" TEXT,
+  "Time" INT,
+  "MissionId" TEXT,
+  "RecordNumber" MEDIUMINT NOT NULL DEFAULT -1,
+  "speed" FLOAT,
+  "accuracy" MEDIUMINT,
+  "locationAge" MEDIUMINT,
+  "GroupNumber" MEDIUMINT NOT NULL DEFAULT -1,
+  "Serving Cell" BOOLEAN,
+  "Provider" TEXT,
+  "slot" SMALLINT,
+  "SID" MEDIUMINT,
+  "NID" MEDIUMINT,
+  "BSID" MEDIUMINT,
+  "Channel" SMALLINT,
+  "PN Offset" SMALLINT,
+  "Signal Strength" FLOAT,
+  "Ec/Io" FLOAT,
+  "Base Latitude" DOUBLE,
+  "Base Longitude" DOUBLE
+)P++Ytablesqlite_sequencesqlite_sequenceCREATE TABLE sqlite_sequence(name,seq)„B
+##ˆKtableGSM_MESSAGEGSM_MESSAGECREATE TABLE "GSM_MESSAGE" (
+  "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+  "geom" POINT,
+  "deviceSerialNumber" TEXT,
+  "Time" INT,
+  "MissionId" TEXT,
+  "RecordNumber" MEDIUMINT NOT NULL DEFAULT -1,
+  "speed" FLOAT,
+  "accuracy" MEDIUMINT,
+  "locationAge" MEDIUMINT,
+  "GroupNumber" MEDIUMINT NOT NULL DEFAULT -1,
+  "Serving Cell" BOOLEAN,
+  "Provider" TEXT,
+  "slot" SMALLINT,
+  "MCC" SMALLINT,
+  "MNC" SMALLINT,
+  "LAC" MEDIUMINT,
+  "CID" MEDIUMINT,
+  "ARFCN" SMALLINT,
+  "BSIC" SMALLINT,
+  "Signal Strength" FLOAT,
+  "TA" SMALLINT
+  
 
 The power of GitHub Copilot, now in your terminal.
 
